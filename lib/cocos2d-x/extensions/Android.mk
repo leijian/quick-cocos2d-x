@@ -143,7 +143,36 @@ ifndef $(QUICK_MINI_TARGET)
 		filters/filters/CCTestFilter.cpp \
 		filters/nodes/CCFilteredSprite.cpp \
 		filters/shaders/ccFilterShaders.cpp \
-        network/WebSocket.cpp
+        network/WebSocket.cpp \
+		DragonBones/animation/Animation.cpp \
+		DragonBones/animation/AnimationState.cpp \
+		DragonBones/animation/TimelineState.cpp \
+		DragonBones/Armature.cpp \
+		DragonBones/Bone.cpp \
+		DragonBones/core/DBObject.cpp \
+		DragonBones/core/DragonBones.cpp \
+		DragonBones/events/AnimationEvent.cpp \
+		DragonBones/events/ArmatureEvent.cpp \
+		DragonBones/events/Event.cpp \
+		DragonBones/events/FrameEvent.cpp \
+		DragonBones/events/SoundEvent.cpp \
+		DragonBones/events/SoundEventManager.cpp \
+		DragonBones/factories/BaseFactory.cpp \
+		DragonBones/objects/dbtinyxml2.cpp \
+		DragonBones/objects/DisplayData.cpp \
+		DragonBones/objects/TransformTimeline.cpp \
+		DragonBones/objects/XMLDataParser.cpp \
+		DragonBones/renderer/CCDragonBones.cpp \
+		DragonBones/renderer/Cocos2dxAtlasNode.cpp \
+		DragonBones/renderer/Cocos2dxDisplayBridge.cpp \
+		DragonBones/renderer/Cocos2dxFactory.cpp \
+		DragonBones/renderer/Cocos2dxTextureAtlas.cpp \
+		DragonBones/Slot.cpp \
+		DragonBones/utils/BytesType.cpp \
+		DragonBones/utils/ConstValues.cpp \
+		DragonBones/utils/DBDataUtil.cpp \
+		DragonBones/utils/DBGeometry.cpp \
+		DragonBones/utils/TransformUtil.cpp
 
 endif
 
@@ -182,8 +211,8 @@ ifndef $(QUICK_MINI_TARGET)
                                $(LOCAL_PATH)/CCArmature/external_tool/Json \
                                $(LOCAL_PATH)/CCArmature/external_tool/Json/lib_json \
                                $(LOCAL_PATH)/CCArmature/utils \
-                               $(LOCAL_PATH)/filters
-
+                               $(LOCAL_PATH)/filters \
+							   $(LOCAL_PATH)/DragonBones 
 endif
 
 

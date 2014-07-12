@@ -1317,4 +1317,13 @@ function display.printscreen(node, args)
 	return sp, file
 end
 
+function display.newDragonBones(params)
+    local skeletonXMLFile = params.skeleton
+    local textureXMLFile = params.texture
+    local dbName = params.dragonBonesName
+    local armatureName = params.armatureName or dbName
+    local aniName = params.animationName or ""
+    return CCDragonBones:create(skeletonXMLFile, textureXMLFile, dbName, armatureName, aniName)
+end
+
 return display
