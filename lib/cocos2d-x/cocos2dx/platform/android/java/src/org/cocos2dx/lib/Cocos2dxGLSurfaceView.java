@@ -23,8 +23,9 @@ THE SOFTWARE.
  ****************************************************************************/
 package org.cocos2dx.lib;
 
+import com.zlimits.suishenbb.GLSurfaceView;
+
 import android.content.Context;
-import android.opengl.GLSurfaceView;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
